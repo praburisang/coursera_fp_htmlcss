@@ -1,8 +1,8 @@
 body{
     background-color: #EDEFEE;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -16,8 +16,16 @@ header img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-height: 12rem;
+    max-height: 6rem;
 }
+nav{
+    background-color: white;
+    min-height: 3rem;
+    border-radius: 1.75rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
 nav ul{
     list-style: none;
     text-align: center;
@@ -26,12 +34,71 @@ nav li{
     display: inline-block;
 
 }
+nav a{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: #395144;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+nav a:hover{
+    color: #AA8B56;
+}
 section{
     display: flex;
 }
 article{
     flex: 1;
 }
+
+.banner{
+    border-radius: 1.75rem;
+    margin-top: 1rem;
+    min-height: 25rem;
+    overflow: hidden;
+    position: relative;
+    
+}
+.banner article{
+    background-image: url(Assets/image1.jpg);
+    background-size: cover;
+    background-position: 0% 60%;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.banner article:hover{
+    transform: scale(1.2);
+}
+.banner h1{
+    color: white;
+}
+.button {
+    display: inline-block;
+    padding: 0.5rem 1.7rem;
+    margin: 0 0.1rem 0.1rem 0;
+    border: 0.16rem solid rgba(255, 255, 255, 0);
+    background-color: #395144;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    text-align: center;
+    transition: all 0.2s;
+  }
+  
+.button:hover {
+    border-color: #F0EBCE;
+}
+
+
 footer{
     display: flex;
 }
