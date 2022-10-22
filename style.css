@@ -49,7 +49,7 @@ section{
     display: flex;
 }
 article{
-    flex: 1;
+    flex: auto;
 }
 
 .banner{
@@ -98,8 +98,28 @@ article{
     border-color: #F0EBCE;
 }
 
+.card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-placeholder{
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 22rem;
+    min-height: 17rem;
+    box-sizing: border-box;
+    border-radius: 1.75rem;
+    background-color: #AA8B56;
+}
+.card-placeholder img{
+    align-items: center;
+    max-width: 20rem;
+    border-radius: 1.5rem;
+}
 
 footer{
+    margin-top: 1rem;
     display: flex;
 }
 footer img{
